@@ -13,7 +13,7 @@ public class Parser {
 
     public static String[] splitCommandWordAndArgs(String rawUserInput) {
         String[] splitCommand = rawUserInput.split(" ", 2);
-        return splitCommand.length == 2 ? splitCommand : new String[] {splitCommand[0], ""};
+        return splitCommand.length == 2 ? splitCommand : new String[]{splitCommand[0], ""};
     }
 
     public void processUserInput(String rawUserInput) {
@@ -24,10 +24,10 @@ public class Parser {
         case (Constants.COMMAND_HELP):
             ui.showHelp();
             break;
-        case(Constants.COMMAND_EXIT):
+        case (Constants.COMMAND_EXIT):
             new ExitCommand().execute();
             break;
-        case(Constants.COMMAND_ITEMS):
+        case (Constants.COMMAND_ITEMS):
             ItemsParser.processItemsInput(commandArgs);
             break;
         case (Constants.COMMAND_ORDERS):

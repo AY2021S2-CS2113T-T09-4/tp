@@ -1,5 +1,6 @@
 package seedu.easylog.ui;
 
+import seedu.easylog.common.Messages;
 import seedu.easylog.item.Item;
 
 /**
@@ -8,17 +9,15 @@ import seedu.easylog.item.Item;
 public class Ui {
 
     public void showGreeting() {
-        String greeting = "Hello! I'm easyLog!\n" + "What can I do for you? Enter help to view commands.";
-        System.out.println(greeting);
+        System.out.println(Messages.GREETING_MESSAGE);
     }
 
     public void showExit() {
-        String exit = "Bye. Thanks for using easyLog!";
-        System.out.println(exit);
+        System.out.println(Messages.EXIT_MESSAGE);
     }
 
     public void showHelp() {
-
+        System.out.println(Messages.HELP_MESSAGE);
     }
 
     public void showItemsHelp() {

@@ -12,4 +12,6 @@ public class ItemManager {
     public void addItem(Item item) {
         itemList.add(item);
     }
+
+    public boolean contains(Item item){ return itemList.contains(item);}
 }

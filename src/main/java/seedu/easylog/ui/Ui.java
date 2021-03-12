@@ -3,7 +3,6 @@ package seedu.easylog.ui;
 import seedu.easylog.common.Messages;
 import seedu.easylog.item.Item;
 
-import java.sql.SQLOutput;
 
 /**
  * Handles ui related methods.
@@ -11,13 +10,11 @@ import java.sql.SQLOutput;
 public class Ui {
 
     public void showGreeting() {
-        String greeting = "Hello! I'm easyLog!\n" + "What can I do for you? Enter help to view commands.";
-        System.out.println(greeting);
+        System.out.println(Messages.MESSAGE_GREETING);
     }
 
     public void showExit() {
-        String exit = "Bye. Thanks for using easyLog!";
-        System.out.println(exit);
+        System.out.println(Messages.MESSAGE_GOODBYE);
     }
 
     public void showHelp() {
@@ -29,9 +26,7 @@ public class Ui {
     }
 
     public void showInvalidCommand() {
-        String invalidCommandMessage = "OOPS!!! I'm Sorry! I don't know what that means.\n"
-                + "Please input again! :)";
-        System.out.println(invalidCommandMessage);
+        System.out.println(Messages.MESSAGE_INVALID_COMMAND);
     }
 
     public void showAddItem(Item item) {
@@ -39,9 +34,7 @@ public class Ui {
     }
 
     public void showEmptyName() {
-        String emptyNameMessage = "OOPS!!!. The item name is missing!\n"
-                + "Please complete the information! :) ";
-        System.out.println(emptyNameMessage);
+        System.out.println(Messages.MESSAGE_EMPTY_NAME);
     }
 
     public void showDeletedItem(Item item) {
@@ -49,7 +42,7 @@ public class Ui {
     }
 
     public void showEmptyNumber() {
-
+        System.out.println(Messages.MESSAGE_EMPTY_NUMBER);
     }
 
     public void showItemList(String rawItemListOutput) {

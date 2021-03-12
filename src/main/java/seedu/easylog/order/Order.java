@@ -17,7 +17,11 @@ public class Order {
         return customerName;
     }
 
-    public ArrayList<Item> getItemsInorder() {
+    public ArrayList<Item> getItemsInOrder() {
         return itemsInOrder;
+    }
+
+    public String getAddOrderMessage() {
+        return "Got it! The order for customer [" + customerName + "] is added.";
     }
 }

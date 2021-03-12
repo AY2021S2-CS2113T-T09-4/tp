@@ -2,6 +2,7 @@ package seedu.easylog.parser;
 
 import seedu.easylog.commands.ExitCommand;
 import seedu.easylog.common.Constants;
+import seedu.easylog.item.ItemManager;
 import seedu.easylog.ui.Ui;
 
 /**
@@ -10,6 +11,7 @@ import seedu.easylog.ui.Ui;
 public class Parser {
 
     public static Ui ui = new Ui();
+    public static ItemManager itemManager = new ItemManager();
 
     public static String[] splitCommandWordAndArgs(String rawUserInput) {
         String[] splitCommand = rawUserInput.split(" ", 2);
@@ -31,6 +33,7 @@ public class Parser {
             ItemsParser.processItemsInput(commandArgs);
             break;
         case (Constants.COMMAND_ORDERS):
+            OrdersParser.processOrdersInput(commandArgs);
             break;
         default:
             ui.showInvalidCommand();

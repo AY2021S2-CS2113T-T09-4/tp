@@ -21,7 +21,7 @@ public class ItemsParser extends Parser {
             try {
                 new ItemsAddCommand().execute(itemsArg);
             } catch (EmptyNameException e) {
-                ui.showEmptyName();
+                ui.showItemEmptyName();
             }
             break;
         case (Constants.COMMAND_DELETE):

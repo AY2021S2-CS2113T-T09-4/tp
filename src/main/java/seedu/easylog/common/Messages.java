@@ -3,6 +3,7 @@ package seedu.easylog.common;
 public class Messages {
 
     public static final String MESSAGE_LIST_ITEMS = "Here are the list of items.";
+    public static final String MESSAGE_ADD_ITEMS_TO_ORDER = "Input the items to be added to this order.";
     public static final String MESSAGE_INVALID_COMMAND = "OOPS!!! I'm Sorry! I don't know what that means.\n"
             + "Please input again! :)";
     public static final String MESSAGE_EMPTY_NAME = "OOPS!!!. The item name is missing!\n"
@@ -11,5 +12,5 @@ public class Messages {
             + "What can I do for you? Enter help to view commands.";
     public static final String MESSAGE_GOODBYE =  "Bye. Thanks for using easyLog!";
     public static final String MESSAGE_EMPTY_NUMBER = "OOPS!!!. The item number is missing!\n"
-            + "Please complete the information! :) ";
+            + "Please complete the information! :) "
 }

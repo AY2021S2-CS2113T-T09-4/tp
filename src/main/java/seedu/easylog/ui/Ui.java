@@ -2,6 +2,7 @@ package seedu.easylog.ui;
 
 import seedu.easylog.common.Messages;
 import seedu.easylog.item.Item;
+import seedu.easylog.order.Order;
 
 
 /**
@@ -33,10 +34,6 @@ public class Ui {
         System.out.println(item.getAddItemMessage());
     }
 
-    public void showEmptyName() {
-        System.out.println(Messages.MESSAGE_EMPTY_NAME);
-    }
-
     public void showDeletedItem(Item item) {
         System.out.println(item.getDeleteItemMessage());
     }
@@ -52,5 +49,13 @@ public class Ui {
 
     public void showOrdersHelp() {
 
+    }
+
+    public void showAddItemsToOrder() {
+        System.out.println(Messages.MESSAGE_ADD_ITEMS_TO_ORDER);
+    }
+
+    public void showOrderAdded(Order order) {
+        System.out.println(order.getAddOrderMessage());
     }
 }

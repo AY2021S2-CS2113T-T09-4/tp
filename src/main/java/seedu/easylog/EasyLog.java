@@ -3,6 +3,7 @@ package seedu.easylog;
 import java.util.Scanner;
 import seedu.easylog.ui.Ui;
 import seedu.easylog.parser.Parser;
+import seedu.easylog.common.Constants;
 
 public class EasyLog {
 
@@ -17,7 +18,7 @@ public class EasyLog {
     public static void main(String[] args) {
         ui.showGreeting();
         while (true) {
-            String userInput = SCANNER.nextLine();
+            String userInput = Constants.SCANNER.nextLine();
             parser.processUserInput(userInput);
         }
     }

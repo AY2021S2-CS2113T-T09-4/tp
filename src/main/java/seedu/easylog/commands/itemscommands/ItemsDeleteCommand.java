@@ -14,7 +14,7 @@ public class ItemsDeleteCommand extends ItemsCommand {
         if (itemsArg.equals("")) {
             throw new EmptyNumberException();
         }
-        int index = Integer.parseInt(itemsArg) - Constants.ARRAY_OFFSET;
+        int index = Integer.parseInt(itemsArg.trim()) - Constants.ARRAY_OFFSET;
         int size = itemManager.getSize();
         if ((index < 0) || (index >= size)) {
             throw new InvalidNumberException();

@@ -375,7 +375,7 @@ As seen from the sequence diagram above, when user wants to add an Order.
 [Return to Table Of Contents](#table-of-contents)
 
 ### 3.7. Orders Delete
-![OrdersDelete Diagram](https://user-images.githubusercontent.com/60382244/114287343-b528f980-9a98-11eb-8b65-c654d25f7ee9.png)
+![OrdersDelete Diagram](https://user-images.githubusercontent.com/60382244/115131535-6e547a00-a02b-11eb-84f5-d7824c370256.png)
 As seen form the sequence diagram above (note that some trivial details are removed from the diagram), when an order is
 deleted
 1. The Ui reads the input from user.
